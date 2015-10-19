@@ -15191,39 +15191,7 @@
     <description>${scope.project.label}</description>
   </setupTask>
   <setupTask
-      xsi:type="setup.targlets:TargletTask">
-    <targlet
-        name="${scope.project.label}"
-        activeRepositoryList="${eclipse.target.platform}">
-      <requirement
-          name="fr.dralagen.eclipseconfig.feature.group"/>
-      <requirement
-          name="org.eclipse.sdk.feature.group"/>
-      <sourceLocator
-          rootFolder="${git.clone.location}"
-          locateNestedProjects="true"/>
-      <repositoryList
-          name="Mars">
-        <repository
-            url="http://download.eclipse.org/releases/mars"/>
-      </repositoryList>
-      <repositoryList
-          name="Luna">
-        <repository
-            url="http://download.eclipse.org/releases/luna"/>
-      </repositoryList>
-      <repositoryList
-          name="Kepler">
-        <repository
-            url="http://download.eclipse.org/releases/kepler"/>
-      </repositoryList>
-      <repositoryList
-          name="Juno">
-        <repository
-            url="http://download.eclipse.org/releases/juno"/>
-      </repositoryList>
-    </targlet>
-  </setupTask>
+      xsi:type="setup.targlets:TargletTask"/>
   <setupTask
       xsi:type="setup.workingsets:WorkingSetTask">
     <description>The dynamic working sets for ${scope.project.label}</description>
